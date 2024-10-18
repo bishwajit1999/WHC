@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1, h2, h3 {
+      color: #2e2e69;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .requirements {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .instructors {
+      background: #eef2ff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6600;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta-button:hover {
+      background-color: #e65c00;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Course Title -->
+    <div class="section">
+      <h1 id="course-title">Software Development Fundamentals</h1>
+      <p id="course-description">Learn the essential skills for becoming a software developer. This course covers the basics of programming, web development, databases, and software engineering.</p>
+    </div>
+
+    <!-- Course Overview -->
+    <div class="section">
+      <h2>Course Overview</h2>
+      <p>This course is designed to give students a comprehensive foundation in software development, covering key concepts in programming languages, algorithms, web development, and database management. Whether you are new to coding or looking to sharpen your skills, this course will provide you with hands-on experience and practical knowledge.</p>
+    </div>
+
+    <!-- Learning Outcomes -->
+    <div class="section">
+      <h2>What You Will Learn</h2>
+      <ul>
+        <li>Understand the basics of programming languages like Python, JavaScript, and Java.</li>
+        <li>Build dynamic websites using HTML, CSS, and JavaScript.</li>
+        <li>Work with databases such as MySQL, PostgreSQL, and MongoDB.</li>
+        <li>Learn how to create and manage RESTful APIs for software applications.</li>
+        <li>Understand the software development lifecycle and agile methodologies.</li>
+      </ul>
+    </div>
+
+    <!-- Course Curriculum -->
+    <div class="section">
+      <h2>Course Curriculum</h2>
+      <ul>
+        <li><strong>Module 1:</strong> Introduction to Programming</li>
+        <li><strong>Module 2:</strong> Web Development Fundamentals (HTML, CSS, JavaScript)</li>
+        <li><strong>Module 3:</strong> Backend Development (Node.js, Express, SQL)</li>
+        <li><strong>Module 4:</strong> Working with APIs and Databases</li>
+        <li><strong>Module 5:</strong> Software Engineering Principles and Agile</li>
+        <li><strong>Module 6:</strong> Final Project: Build a Full-Stack Application</li>
+      </ul>
+    </div>
+
+    <!-- Requirements -->
+    <div class="section requirements">
+      <h3>Requirements</h3>
+      <ul>
+        <li>Basic understanding of computers and the internet.</li>
+        <li>No prior programming knowledge is required.</li>
+        <li>A computer (Windows/Mac/Linux) with internet access.</li>
+        <li>A desire to learn and build projects hands-on.</li>
+      </ul>
+    </div>
+
+    <!-- Instructors -->
+    <div class="section instructors">
+      <h3>Your Instructors</h3>
+      <p><strong>John Doe:</strong> Senior Software Engineer with 10 years of experience in full-stack development and teaching.</p>
+      <p><strong>Jane Smith:</strong> Data Scientist and Machine Learning expert with over 8 years of industry experience.</p>
+    </div>
+
+    <!-- Call to Action Button -->
+    <div class="section">
+      <a href="enroll.html" class="cta-button">Enroll Now</a>
+    </div>
+  </div>
+
+  <script>
+    // Example of passing course data from the main page using URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const courseName = urlParams.get('course');
+
+    // Set the course title and details dynamically if courseName exists
+    if (courseName) {
+      document.getElementById('course-title').textContent = courseName;
+      // Here you can extend with specific course details based on courseName
+    }
+  </script>
+
+</body>
+</html>
